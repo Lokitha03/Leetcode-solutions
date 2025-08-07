@@ -2,12 +2,11 @@ class Solution {
     public int removeElement(int[] nums, int val) {
         int c=0;
         for(int i=0;i<nums.length;i++){
-            if(val==nums[i]){
-                nums[i]='_';
+            if(val!=nums[i]){
+                nums[c]=nums[i];
                 c++;
             }
         }
-        Arrays.sort(nums);
-        return (nums.length-c);
+        return c;
     }
 }
