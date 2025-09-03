@@ -45,11 +45,6 @@ class Solution {
         ListNode n=rev(half);
 
         ListNode tmp=head;
-        while(tmp!=null)
-        {
-            System.out.println(tmp.val);
-            tmp = tmp.next;
-        }
         ListNode t=head;
         while(t!=null&&n!=null){
             if(t.val!=n.val){
